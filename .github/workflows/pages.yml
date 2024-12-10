@@ -30,7 +30,7 @@ jobs:
       - name: Install Dependencies
         run:  npm install npm install -g hexo-cli
       - name: Build static
-        run: hexo generate hexo deploy
+        run: hexo deploy hexo generate
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
